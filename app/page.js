@@ -58,7 +58,7 @@ const Home = () => {
           </h1>
 
           <p className="text-lg text-gray-300 max-w-2xl">
-            With expertise in both frontend and backend development, I build robust, scalable web applications using modern technologies like React, Node.js, and MongoDB.
+            With expertise in both frontend and backend development, I build robust, scalable web applications using modern technologies like React, Django, and MongoDB.
            
           </p>
 
