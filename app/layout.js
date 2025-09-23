@@ -23,8 +23,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Sandhya Timalsrna",
-  description: "where each apple tells the story",
+  title: "Sandhya Timalsena",
+  description: "",
 };
 
 export default function RootLayout({ children }) {
