@@ -3,46 +3,15 @@ import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Moon from "./moon/page";
-import { Facebook, GithubIcon, Instagram, LucideLinkedin, MoonIcon } from "lucide-react";
+import { Book, BookA, Camera, ChevronDown, Facebook, GithubIcon, Instagram, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight } from "lucide-react";
+import Stars from "@/components/Stars";
+import Projects from "@/components/Projects";
 
 const Home = () => {
-  const [stars, setStars] = useState([]);
 
-  useEffect(() => {
-    const createRandomStars = (count) => {
-      const stars = [];
-      for (let i = 0; i < count; i++) {
-        const top = Math.random() * 100;
-        const left = Math.random() * 100;
-        const size = Math.random() * 2 + 1;
-        const duration = Math.random() * 20 + 10;
-        const delay = Math.random() * 5;
-        stars.push({ top, left, size, duration, delay });
-      }
-      return stars;
-    };
-
-    setStars(createRandomStars(200));
-  }, []);
 
   return (
     <div className="bg-white">
-      <style jsx>{`
-        @keyframes moveStar {
-          0% {
-            transform: translate(0, 0);
-            opacity: 1;
-          }
-          50% {
-            opacity: 0.6;
-          }
-          100% {
-            transform: translate(-100px, -100px);
-            opacity: 1;
-          }
-        }
-      `}</style>
-
       <section className="relative flex justify-between items-center h-screen w-full bg-[#070707] text-white overflow-hidden px-16 ">
 
         <div className="relative w-2/3 space-y-6 ml-12 -mt-16">
@@ -59,7 +28,7 @@ const Home = () => {
 
           <p className="text-lg text-gray-300 max-w-2xl">
             With expertise in both frontend and backend development, I build robust, scalable web applications using modern technologies like React, Django, and MongoDB.
-           
+
           </p>
 
           <div className="flex gap-8">
@@ -96,31 +65,35 @@ const Home = () => {
           </Canvas>
         </div>
 
+        <Stars count={200} />
 
-        {stars.map((star, index) => (
-          <div
-            key={index}
-            style={{
-              position: "absolute",
-              top: `${star.top}%`,
-              left: `${star.left}%`,
-              width: `${star.size}px`,
-              height: `${star.size}px`,
-              backgroundColor: "white",
-              borderRadius: "50%",
-              boxShadow: "0 0 5px rgba(255, 255, 255, 0.8)",
-              zIndex: 0,
-              animation: `moveStar ${star.duration}s linear infinite`,
-              animationDelay: `${star.delay}s`,
-            }}
-          />
-        ))}
+
+
       </section>
 
       {/* next section starts here */}
-      <section className="h-screen bg-white text-black flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Hi next section it is</h1>
+      <section className="relative h-full sm:pb-16 lg:py-8 lg:pb-16 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center max-w-6xl mx-auto mb-12 sm:mb-16 lg:mb-20">
+
+            <div className="inline-flex items-center mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition  px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm  mb-6 sm:mb-8 shadow-sm">
+              <MoonIcon className="mr-2" />
+              About Me
+            </div>
+
+            <h1 className="text-3xl font-medium text-gray-900 sm:text-4xl lg:text-5xl leading-tight">
+              I'm <span className="text-yellow-200">Sandhya Timalsena</span>, unknown about specification
+             
+            </h1>
+
+          </div>
+        </div>
       </section>
+
+      <Projects />
+
+
+
     </div>
   );
 };
