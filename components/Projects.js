@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ChevronDown, MoveUpRight } from "lucide-react";
-import projects from "@/lib/data/projects";
+import { projects } from "@/lib/data/projects";
 
 const Projects = () => {
   return (
@@ -20,7 +20,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="rounded-2xl p-4 transition-transform transform hover:scale-105 hover:shadow-xl"
+              className="rounded-2xl p-3 transition-transform transform hover:scale-105 hover:shadow-xl"
             >
               <img
                 src={project.image}

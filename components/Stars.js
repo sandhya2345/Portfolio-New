@@ -10,7 +10,7 @@ const Stars = ({ count = 200 }) => {
       for (let i = 0; i < count; i++) {
         const top = Math.random() * 100;
         const left = Math.random() * 100;
-        const size = Math.random() * 2 + 1;
+        const size = Math.random() * 2 + 2;
         const duration = Math.random() * 20 + 10;
         const delay = Math.random() * 5;
         stars.push({ top, left, size, duration, delay });
