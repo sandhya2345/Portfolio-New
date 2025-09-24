@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ChevronDown, MoveUpRight } from "lucide-react";
+import { ChevronDown, Earth, MoveUpRight, Rocket, Sparkle, Sun } from "lucide-react";
 import { projects } from "@/lib/data/projects";
 
 const Projects = () => {
@@ -10,8 +10,9 @@ const Projects = () => {
 
         <div className="flex justify-center">
           <div className="inline-flex items-center mt-18 bg-white border border-black  hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium mb-6 sm:mb-8 shadow-sm">
+              <Sun className="mr-2" />
             Project Showcase
-            <ChevronDown className="ml-2" />
+            <Sparkle className="ml-2" />
           </div>
         </div>
 
@@ -37,7 +38,7 @@ const Projects = () => {
         <div className="mt-12 text-center">
           <button className="px-6 py-3 rounded-full bg-white border border-black font-medium hover:bg-black hover:text-white transition flex items-center justify-center mx-auto">
             Explore all Projects
-            <MoveUpRight />
+            <Rocket className="ml-2" />
           </button>
         </div>
       </div>
