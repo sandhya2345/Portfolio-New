@@ -21,7 +21,7 @@ const Questions = () => {
             return stars;
         };
 
-        setStars(createRandomStars(150));
+        setStars(createRandomStars(100));
     }, []);
 
     const toggleQuestion = (id) => {
