@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Moon from "./moon/page";
-import { Book, BookA, Camera, ChevronDown, Facebook, GithubIcon, Instagram, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight, Rocket } from "lucide-react";
+import { Book, BookA, Camera, ChevronDown, Facebook, Flower, GithubIcon, Heart, Instagram, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight, Music, Rocket, Sparkle, SparkleIcon, Star } from "lucide-react";
 import Stars from "@/components/Stars";
 import Projects from "@/components/Projects";
 import Questions from "@/components/Questions";
@@ -80,6 +80,7 @@ const Home = () => {
             <div className="inline-flex items-center mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition  px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm  mb-6 sm:mb-8 shadow-sm">
               <Rocket className="mr-2" />
               About Me
+              <SparkleIcon className="ml-2"/>
             </div>
 
             <h1 className="text-3xl font-medium text-gray-900 sm:text-4xl lg:text-5xl leading-tight">

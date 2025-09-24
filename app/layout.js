@@ -23,7 +23,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Sandhya Timalsena",
+  title: "Sandhya Timalsena | Frontend Developer",
   description: "",
 };
 
