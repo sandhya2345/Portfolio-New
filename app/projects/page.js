@@ -30,7 +30,7 @@ const Projects = () => {
       
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => setActive("all")} className={buttonClasses("all")}>
-            <Hamburger /> All Designs
+            <Hamburger /> All Projects
           </button>
           <button onClick={() => setActive("websites")} className={buttonClasses("websites")}>
             <Globe /> Websites
