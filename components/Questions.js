@@ -21,7 +21,7 @@ const Questions = () => {
             return stars;
         };
 
-        setStars(createRandomStars(100));
+        setStars(createRandomStars(150));
     }, []);
 
     const toggleQuestion = (id) => {
@@ -64,10 +64,11 @@ const Questions = () => {
                 />
             ))}
 
-            <section className="py-12 relative z-10 text-black">
+            <section className="py-12 relative  text-black">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-8">
-                        <h1 className="flex justify-center items-center gap-2 text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                        <h1 className="flex justify-center items-center gap-2 text-2xl sm:text-4xl  text-gray-900 mb-4">
+                            <Stars className="w-6 h-6" />
                             Quick Answers
                             <Stars className="w-6 h-6" />
                         </h1>

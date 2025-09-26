@@ -28,7 +28,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="relative h-[90vh] mt-8 border-t border-gray-200 bg-white overflow-hidden flex flex-col justify-between items-center">
+    <footer className="relative h-[90vh] mt-8 border-t border-gray-100 bg-white overflow-hidden flex flex-col justify-between items-center">
 
       {icons.map(({ id, Icon, top, left }) => (
         <div
@@ -42,7 +42,7 @@ const Footer = () => {
 
 
       <section className="flex items-center z-10 justify-center gap-6 mt-10">
-        <AudioLines size={100} className="text-black" />
+        <AudioLines size={90} className="text-black" />
 
         <button onClick={handlePlayClick} className="focus:outline-none">
           {isPlaying ? (
@@ -52,7 +52,7 @@ const Footer = () => {
           )}
         </button>
 
-        <AudioLines size={100} className="text-black" />
+        <AudioLines size={90} className="text-black" />
       </section>
 
 
@@ -99,7 +99,7 @@ const Footer = () => {
 
       {/* Footer bottom */}
       <div className="w-full mt-auto">
-        <hr className="border-t border-gray-300" />
+        <hr className="border-t border-gray-200" />
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 text-gray-600 text-sm">
           <p>© {new Date().getFullYear()} All rights reserved.</p>
           <p className="font-semibold">Made with ❤️ by Sandhya</p>

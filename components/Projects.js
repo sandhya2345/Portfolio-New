@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ChevronDown, Earth, MoveUpRight, Rocket, Sparkle, Sun } from "lucide-react";
+import { Rocket, Sparkle, Sun } from "lucide-react";
 import { projects } from "@/lib/data/projects";
 
 const Projects = () => {
@@ -17,7 +17,7 @@ const Projects = () => {
         </div>
 
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -28,7 +28,7 @@ const Projects = () => {
                 alt={project.alt}
                 className="rounded-xl mb-6 w-full h-52 object-cover"
               />
-              <h3 className="text-lg md:text-xl font-semibold mb-3">{project.title}</h3>
+              <h3 className="text-lg md:text-xl font-medium mb-3">{project.title}</h3>
               <p className="text-gray-600 text-sm md:text-base">{project.description}</p>
             </div>
           ))}

@@ -80,11 +80,12 @@ const Home = () => {
             <div className="inline-flex items-center mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition  px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm  mb-6 sm:mb-8 shadow-sm">
               <Rocket className="mr-2" />
               About Me
-              <SparkleIcon className="ml-2"/>
+              {/* <SparkleIcon className="ml-2"/> */}
             </div>
 
             <h1 className="text-3xl font-medium text-gray-900 sm:text-4xl lg:text-5xl leading-tight">
-              I'm <span className="text-yellow-200">Sandhya Timalsena</span>, unknown about specification
+              I'm <span className="text-yellow-200">Sandhya Timalsena</span>, 
+              I dont know what to do with you man!!
              
             </h1>
 
