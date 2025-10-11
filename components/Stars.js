@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const Stars = ({ count = 150 }) => {
+const Stars = ({ count = 200 }) => {
   const [stars, setStars] = useState([]);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const Stars = ({ count = 150 }) => {
       for (let i = 0; i < count; i++) {
         const top = Math.random() * 100;
         const left = Math.random() * 100;
-        const size = Math.random() * 2 + 2;
+        const size = Math.random() * 2 + 1.5;
         const duration = Math.random() * 20 + 10;
         const delay = Math.random() * 5;
         stars.push({ top, left, size, duration, delay });

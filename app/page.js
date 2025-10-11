@@ -48,7 +48,7 @@ const Home = () => {
       </div>
 
       
-      <div className="relative w-full md:w-1/2 lg:w-1/3 h-80 sm:h-96 md:h-full flex justify-center mb-12 items-center pointer-events-none">
+      <div className="relative w-full md:w-1/2 lg:w-1/3 h-80 sm:h-96 md:h-full flex justify-center mb-24 items-center pointer-events-none">
         <Canvas
           style={{
             width: "100%",
