@@ -52,44 +52,45 @@ const About = () => {
   }, []);
 
   return (
+    <div>
+
     <section className="flex flex-col items-center min-h-screen bg-white text-center relative overflow-hidden">
-      {/* Star Animation Style */}
       <style jsx>{`
         @keyframes moveStar {
           0% {
             transform: translate(0, 0);
             opacity: 0.9;
-          }
-          50% {
-            opacity: 0.5;
-          }
-          100% {
-            transform: translate(-30px, -30px);
-            opacity: 0.9;
-          }
-        }
-      `}</style>
+            }
+            50% {
+              opacity: 0.5;
+              }
+              100% {
+                transform: translate(-30px, -30px);
+                opacity: 0.9;
+                }
+                }
+                `}</style>
 
       {/* Background Stars */}
       {stars.map((star, index) => (
         <div
-          key={index}
-          style={{
-            position: "absolute",
-            top: `${star.top}%`,
-            left: `${star.left}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            backgroundColor: "black",
-            borderRadius: "50%",
-            boxShadow: "0 0 6px rgba(255, 255, 255, 0.8)",
-            animation: `moveStar ${star.duration}s linear infinite`,
-            animationDelay: `${star.delay}s`,
-          }}
+        key={index}
+        style={{
+          position: "absolute",
+          top: `${star.top}%`,
+          left: `${star.left}%`,
+          width: `${star.size}px`,
+          height: `${star.size}px`,
+          backgroundColor: "black",
+          borderRadius: "50%",
+          boxShadow: "0 0 6px rgba(255, 255, 255, 0.8)",
+          animation: `moveStar ${star.duration}s linear infinite`,
+          animationDelay: `${star.delay}s`,
+        }}
         />
       ))}
 
-      {/* 3D Blob Section */}
+      
       <div className="w-full h-[400px] sm:h-[500px] -mt-22 z-10">
         <Canvas camera={{ position: [0, 0, 5] }}>
           <ambientLight intensity={0.8} />
@@ -149,6 +150,14 @@ const About = () => {
         </div>
       </div>
     </section>
+
+    <section className="min-h-screen">
+
+    </section>
+
+    
+    
+      </div>
   );
 };
 
