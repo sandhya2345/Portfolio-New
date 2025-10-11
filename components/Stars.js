@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const Stars = ({ count = 200 }) => {
+const Stars = ({ count = 150 }) => {
   const [stars, setStars] = useState([]);
 
   useEffect(() => {
