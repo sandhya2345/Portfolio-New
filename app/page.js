@@ -79,7 +79,8 @@ const Home = () => {
 
             <h1 className="text-3xl font-medium text-gray-900 sm:text-4xl lg:text-5xl leading-tight">
               I'm <span className="text-yellow-200">Sandhya Timalsena</span>, 
-              I dont know what to do with you man!!
+              I still got no idea what should I do here!!!
+              maybe some other day........ its sad out here..............
              
             </h1>
 

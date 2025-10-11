@@ -80,7 +80,7 @@ const Footer = () => {
             href=""
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-500 text-white px-6 py-3 rounded-full font-medium hover:opacity-80"
+            className="bg-teal-500 text-white px-6 py-3 rounded-full font-medium hover:opacity-80"
           >
             Chat on WhatsApp
           </a>
