@@ -5,11 +5,11 @@ import { projects } from "@/lib/data/projects";
 
 const Projects = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-4 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="flex justify-center">
-          <div className="inline-flex items-center mt-18 bg-white border border-black  hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium mb-6 sm:mb-8 shadow-sm">
+          <div className="inline-flex items-center mt-12 bg-white border border-black  hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium mb-6 sm:mb-12 shadow-sm">
               <Sun className="mr-2" />
             Project Showcase
             <Sparkle className="ml-2" />
@@ -35,7 +35,7 @@ const Projects = () => {
         </div>
 
 
-        <div className="mt-12 text-center">
+      <div className="mt-14 text-center">
           <button className="px-6 py-3 rounded-full bg-white border border-black font-medium hover:bg-black hover:text-white transition flex items-center justify-center mx-auto">
             Explore all Projects
             <Rocket className="ml-2" />
