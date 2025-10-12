@@ -4,65 +4,11 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 const Contact = () => {
-  const [stars, setStars] = useState([]);
-
-
-  useEffect(() => {
-    const createRandomStars = (count) => {
-      const stars = [];
-      for (let i = 0; i < count; i++) {
-        const top = Math.random() * 100;
-        const left = Math.random() * 100;
-        const size = Math.random() * 2 + 1;
-        const duration = Math.random() * 20 + 10;
-        const delay = Math.random() * 5;
-        stars.push({ top, left, size, duration, delay });
-      }
-      return stars;
-    };
-
-    setStars(createRandomStars(150));
-  }, []);
+  
 
   return (
     <div className='min-h-screen py-12  bg-white'>
       <section className=''>
-
-
-        <style jsx>{`
-        @keyframes moveStar {
-          0% {
-            transform: translate(0, 0);
-            opacity: 0.9;
-            }
-            50% {
-              opacity: 0.5;
-              }
-              100% {
-                transform: translate(-30px, -30px);
-                opacity: 0.9;
-                }
-                }
-                `}</style>
-
-        {/* Background Stars */}
-        {stars.map((star, index) => (
-          <div
-            key={index}
-            style={{
-              position: "absolute",
-              top: `${star.top}%`,
-              left: `${star.left}%`,
-              width: `${star.size}px`,
-              height: `${star.size}px`,
-              backgroundColor: "black",
-              borderRadius: "50%",
-              boxShadow: "0 0 6px rgba(255, 255, 255, 0.8)",
-              animation: `moveStar ${star.duration}s linear infinite`,
-              animationDelay: `${star.delay}s`,
-            }}
-          />
-        ))}
         <div className='max-w-4xl mx-auto px-4 text-center'>
           <div className="inline-flex items-center backdrop-blur-sm mb-4 bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm shadow-sm">
             <Flame className='mr-2' />

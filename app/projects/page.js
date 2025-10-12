@@ -20,7 +20,7 @@ const Projects = () => {
       : projects.filter((project) => project.category === active);
 
   return (
-    <section className="text-center py-12">
+    <section className="text-center py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <h2 className="flex flex-wrap items-center justify-center text-3xl sm:text-4xl  mb-8">
           Showcasing the projects
