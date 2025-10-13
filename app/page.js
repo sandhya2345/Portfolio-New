@@ -3,10 +3,11 @@ import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Moon from "./moon/page";
-import { Book, BookA, Camera, ChevronDown, Facebook, Flower, GithubIcon, Handshake, HandshakeIcon, Heart, Instagram, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight, Music, Rocket, Sparkle, SparkleIcon, Star } from "lucide-react";
+import { Atom, Book, BookA, Bot, Brain, Camera, ChevronDown, Facebook, Figma, Flame, FlameIcon, Flower, GithubIcon, Handshake, HandshakeIcon, Heart, Instagram, KeyRound, Leaf, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight, Music, Rocket, RocketIcon, ShellIcon, Shield, ShieldPlus, Sparkle, SparkleIcon, Star, Type } from "lucide-react";
 import Stars from "@/components/Stars";
 import Projects from "@/components/Projects";
 import Questions from "@/components/Questions";
+
 
 const Home = () => {
   
@@ -73,10 +74,15 @@ const Home = () => {
           <div className="text-center max-w-6xl mx-auto mb-12 sm:mb-16 lg:mb-20">
 
       
-            <div className="inline-flex items-center mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm mb-3 sm:mb-8 shadow-sm">
+            <div className="inline-flex items-center mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:mb-4 shadow-sm">
               <Rocket className="mr-2" />
               About Me
+              <FlameIcon className="ml-2"/>
             </div>
+
+             {/* <p className="text-gray-600 text-base sm:text-lg leading-relaxed px-4">
+                I enjoy working with modern web technologies and bringing ideas to life on screen.
+                </p> */}
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-16 mt-8">
            
@@ -125,11 +131,11 @@ const Home = () => {
                 visually appealing, responsive, and user-focused websites. My goal is to craft digital experiences that
                 feel effortless yet impactful — combining creativity and clean code to tell a meaningful story through design.
               </p>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed px-4">
+              {/* <p className="text-gray-600 text-base sm:text-lg leading-relaxed px-4">
                 I enjoy working with modern web technologies and bringing ideas to life on screen. Whether it's a
                 personal portfolio, a dynamic web app, or an eCommerce platform, I strive to make each project
                 not just functional — but memorable.
-              </p>
+              </p> */}
 
            
               <div className="mt-12">
@@ -143,10 +149,62 @@ const Home = () => {
                 </a>
               </div>
             </div>
+
+            
           </div>
         </div>
+
+
+         <div className="grid gap-10 md:grid-cols-4 sm:grid-cols-2 max-w-6xl mx-auto py-8">
+
+          <div className="text-center">
+            <div className="w-32 h-32 mx-auto flex bg-green-50 rounded-2xl p-6 group-hover:bg-green-100 transition-all duration-300">
+              <Atom className="w-14 h-14 text-gray-700 mx-auto mt-3" />
+            </div>
+            <h3 className="mt-4 text-xl font-bold text-gray-900">Frontend</h3>
+            <p className="mt-2 text-gray-600 text-md">
+             Worked with React.js, Next.js, JavaScript, HTML, CSS, and Tailwind CSS to build responsive, user-friendly interfaces.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <div className="w-32 h-32 mx-auto flex bg-green-50 rounded-2xl p-6 group-hover:bg-green-100 transition-all duration-300">
+             <ShieldPlus className="w-14 h-14 text-gray-700 mx-auto mt-3" />
+            </div>
+            <h3 className="mt-4 text-xl font-bold text-gray-900">Backend</h3>
+            <p className="mt-2 text-gray-600 text-md">
+            Developed and managed APIs using Django, Node.js, and .NET, focusing on scalability and clean architecture.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <div className="w-32 h-32 mx-auto flex bg-green-50 rounded-2xl p-6 group-hover:bg-green-100 transition-all duration-300">
+              <Bot className="w-14 h-14 text-gray-700  mx-auto mt-3" />
+            </div>
+            <h3 className="mt-4 text-xl font-bold text-gray-900">Data and AI</h3>
+            <p className="mt-2 text-gray-600 text-md">
+             Used Python, scikit-learn, TensorFlow, and Pandas for data analysis and machine learning projects.
+            </p>
+          </div>
+
+
+          <div className="group text-center">
+            <div className="w-32 h-32 mx-auto flex bg-green-50 rounded-2xl p-6 group-hover:bg-green-100 transition-all duration-300">
+               <GithubIcon className="w-14 h-14 text-gray-700 mx-auto mt-2" />
+            </div>
+            <h3 className="mt-4 text-xl font-bold text-gray-900">Tools</h3>
+            <p className="mt-2 text-gray-600 text-md">
+             Experienced with Git, GitHub, VS Code, MySQL, and Postman for development and collaboration.
+            </p>
+          </div>
+
+        </div>
+
+        
       </section>
 
+     
+ 
 
 
 

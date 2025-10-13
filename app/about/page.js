@@ -109,7 +109,7 @@ const About = () => {
           <h1 className="text-5xl md:text-5xl font-medium text-gray-900 mb-2">
             Sandhya Timalsena
           </h1>
-          <p className="text-gray-700 text-xl mb-6">Creative Developer</p>
+          <p className="text-gray-700 text-xl mb-6">Uncreative Developer</p>
 
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             <span className="inline-flex items-center backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm shadow-sm">
