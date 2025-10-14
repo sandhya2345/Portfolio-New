@@ -2,7 +2,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, MeshDistortMaterial } from "@react-three/drei";
-import { ArrowRight, FileText, FileTextIcon, Globe, Palette, Rocket, RocketIcon, Settings, Star, Stars } from "lucide-react";
+import { ArrowRight, CheckCircle, FileText, FileTextIcon, Globe, GraduationCap, Palette, Rocket, RocketIcon, Settings, Star, Stars } from "lucide-react";
+import Image from "next/image";
 
 
 const Fomosphere = () => {
@@ -71,7 +72,7 @@ const About = () => {
                 }
                 `}</style>
 
-        {/* Background Stars */}
+
         {stars.map((star, index) => (
           <div
             key={index}
@@ -134,7 +135,7 @@ const About = () => {
             </span>
           </div>
 
-          <p className="text-lg md:text-2xl text-gray-900 leading-relaxed max-w-6xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-900 leading-relaxed max-w-6xl mx-auto">
             I am a passionate web developer dedicated to crafting engaging and
             user-friendly digital experiences. My expertise spans front-end and
             back-end development, where I transform ideas into interactive,
@@ -142,14 +143,108 @@ const About = () => {
           </p>
 
 
-          <div className="mt-8">
-            <button className="inline-flex items-center backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm shadow-sm">
-              <RocketIcon className="mr-2" />
-              Career Highlights →
-            </button>
+
+        </div>
+      </section>
+
+      <section className="flex flex-col items-center justify-center gap-16 py-16 px-20 bg-green-50">
+
+        <div className="flex justify-center mb-10">
+          <button className="inline-flex items-center backdrop-blur-sm bg-green-50 border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm shadow-sm">
+            <RocketIcon className="mr-2" />
+            Educational Background
+          </button>
+        </div>
+
+     
+        <div className="flex flex-col md:flex-row items-center justify-center gap-16">
+          <div className="relative flex flex-col items-center">
+            <div className="absolute -top-4 -left-8 bg-white border border-green-200 rounded-full">
+              <Image
+                src="/college_logo.png"
+                alt="College Logo"
+                width={90}
+                height={90}
+                className="object-contain"
+              />
+            </div>
+
+            <div className="rounded-2xl overflow-hidden shadow-md">
+              <Image
+                src="/leafs.png"
+                alt="Graduation"
+                width={400}
+                height={300}
+                className="object-cover rounded-3xl"
+              />
+            </div>
+          </div>
+
+          <div className="text-center md:text-left max-w-xl">
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900">
+                Itahari International College
+              </h2>
+            </div>
+
+            <p className="text-gray-700 mb-6">
+              Bsc Hons Computing <br />
+              <span className="text-gray-500">2022 - 2025</span>
+            </p>
+
+            <div className="flex justify-center md:justify-start gap-16 mb-8">
+              <div className="text-center">
+                <p className="text-gray-500">Overall CGPA</p>
+                <h3 className="text-5xl font-bold text-gray-900">0.0</h3>
+              </div>
+              <div className="text-center">
+                <p className="text-gray-500">Internships completed</p>
+                <h3 className="text-5xl font-bold text-gray-900">02+</h3>
+              </div>
+            </div>
+
+            <ul className="text-gray-800 space-y-3 text-lg sm:text-lg mb-10">
+              <li className="flex items-start gap-2">
+                <CheckCircle className="w-6 h-6 mt-1 mr-2" />
+                Built the frontend for PG Lifestyle, a mattress and sofa company, boosting online sales by up to 20%.
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle className="w-6 h-6 mt-1 mr-2" />
+                Developed both backend and frontend for Pathyakrama, an educational platform.
+              </li>
+            </ul>
+
+            <div className="border-t border-gray-100 pt-6">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-2">
+                Delhi Public School
+              </h2>
+              <p className="text-gray-700 mb-4">
+                Higher Secondary Education - Science (Biology) <br />
+                <span className="text-gray-500">2020-2022</span>
+              </p>
+              <div className="flex justify-start gap-16 mb-4">
+                <div className="text-center">
+                  <p className="text-gray-500">Overall GPA</p>
+                  <h3 className="text-3xl font-bold text-gray-900">3.7</h3>
+                </div>
+                <div className="text-center">
+                  <p className="text-gray-500">Competitions Won</p>
+                  <h3 className="text-3xl font-bold text-gray-900">05+</h3>
+                </div>
+              </div>
+              <ul className="text-gray-800 space-y-3 text-lg sm:text-lg">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-6 h-6 mt-1 mr-2" />
+                  Active participant in the Science and Tech Club, organizing annual science fairs.
+                </li>
+                
+              </ul>
+            </div>
           </div>
         </div>
       </section>
+
+
 
       <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-20 bg-white">
 
@@ -171,8 +266,8 @@ const About = () => {
           </h2>
           <p className="text-gray-700 mb-6 text-lg leading-relaxed">
             As a passionate Frontend and Backend Developer, I craft seamless digital experiences
-             that balance design and functionality. From building dynamic user interfaces to 
-             developing efficient server-side systems, I bring ideas to life with clean, scalable code.
+            that balance design and functionality. From building dynamic user interfaces to
+            developing efficient server-side systems, I bring ideas to life with clean, scalable code.
           </p>
 
           <div className="flex space-x-4">
