@@ -66,7 +66,7 @@ const Questions = () => {
 
             <section className="py-12 relative  text-black">
                 <div className="max-w-5xl mx-auto px-4">
-                    <div className="text-center mb-8">
+                    <div className="text-center mb-12">
                         <h1 className="flex justify-center items-center gap-2 text-2xl sm:text-4xl  text-gray-900 mb-4">
                             <Stars className="w-6 h-6" />
                             Quick Answers

@@ -6,7 +6,7 @@ import { projects } from "@/lib/data/projects";
 const Projects = () => {
   return (
     <section className="py-4 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-12 lg:px-12">
 
         <div className="flex justify-center">
           <div className="inline-flex items-center mt-12 bg-white border border-black  hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium mb-6 sm:mb-12 shadow-sm">
@@ -17,7 +17,7 @@ const Projects = () => {
         </div>
 
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
           {projects.map((project) => (
             <div
               key={project.id}

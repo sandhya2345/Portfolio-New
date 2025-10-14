@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Moon from "./moon/page";
-import { Atom, Book, BookA, Bot, Brain, Camera, ChevronDown, Facebook, Figma, Flame, FlameIcon, Flower, GithubIcon, Handshake, HandshakeIcon, Heart, Instagram, KeyRound, Leaf, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight, Music, Rocket, RocketIcon, ShellIcon, Shield, ShieldPlus, Sparkle, SparkleIcon, Star, Type } from "lucide-react";
+import { Atom, Book, BookA, Bot, Brain, Camera, ChevronDown, Facebook, Figma, Flame, FlameIcon, Flower, GithubIcon, Handshake, HandshakeIcon, Heart, Instagram, KeyRound, Leaf, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight, Music, Rocket, RocketIcon, Settings, ShellIcon, Shield, ShieldPlus, Sparkle, SparkleIcon, Star, Type } from "lucide-react";
 import Stars from "@/components/Stars";
 import Projects from "@/components/Projects";
 import Questions from "@/components/Questions";
@@ -71,7 +71,7 @@ const Home = () => {
       <section className="relative h-full sm:pb-16 lg:py-8 overflow-hidden">
       
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center max-w-6xl mx-auto mb-12 sm:mb-16 lg:mb-20">
+          <div className="text-center max-w-6xl mx-auto mb-12 sm:mb-10 lg:mb-12">
 
       
             <div className="inline-flex items-center mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:mb-4 shadow-sm">
@@ -122,6 +122,8 @@ const Home = () => {
               </div>
             </div>
 
+            
+
             <div className="mt-16 text-center max-w-6xl mx-auto">
               <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">
                 Hello, I'm <span className="text-black font-semibold">Sandhya Timalsena</span>
@@ -169,7 +171,7 @@ const Home = () => {
 
           <div className="text-center">
             <div className="w-32 h-32 mx-auto flex bg-green-50 rounded-2xl p-6 group-hover:bg-green-100 transition-all duration-300">
-             <ShieldPlus className="w-14 h-14 text-gray-700 mx-auto mt-3" />
+             <Settings className="w-14 h-14 text-gray-700 mx-auto mt-3" />
             </div>
             <h3 className="mt-4 text-xl font-bold text-gray-900">Backend</h3>
             <p className="mt-2 text-gray-600 text-md">

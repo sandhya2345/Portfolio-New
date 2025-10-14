@@ -1,34 +1,34 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Figma, Github, Linkedin, Cpu, AudioLines, Play, Pause, AtomIcon, Sparkle, Panda, Sun, Rocket, Stars, Heart } from 'lucide-react'
 
 const Footer = () => {
   const [isPlaying, setIsPlaying] = useState(false)
-
-  const youtubeUrl = "https://www.youtube.com/watch?v=XbxNtPiCBK8&list=RDXbxNtPiCBK8&start_radio=1"
+  const audioRef = useRef(null)
 
   const handlePlayClick = () => {
-    if (!isPlaying) {
-      window.open(youtubeUrl, "_blank")
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause()
+      } else {
+        audioRef.current.play()
+      }
+      setIsPlaying(!isPlaying)
     }
-    setIsPlaying(!isPlaying)
   }
 
   const icons = [
-
     { id: 3, Icon: Panda, top: "65%", left: "10%" },
     { id: 4, Icon: Sun, top: "30%", left: "90%" },
     { id: 5, Icon: Rocket, top: "75%", left: "80%" },
     { id: 6, Icon: Stars, top: "20%", left: "20%" },
   ]
 
-
-
-
-
   return (
     <footer className="relative h-[90vh] mt-8 border-t border-gray-100 bg-white overflow-hidden flex flex-col justify-between items-center">
+      
+      <audio ref={audioRef} src="/audio/Audio.mp3" preload="auto" />
 
       {icons.map(({ id, Icon, top, left }) => (
         <div
@@ -39,7 +39,6 @@ const Footer = () => {
           <Icon size={26} />
         </div>
       ))}
-
 
       <section className="flex items-center z-10 justify-center gap-6 mt-10">
         <AudioLines size={90} className="text-black" />
@@ -55,29 +54,26 @@ const Footer = () => {
         <AudioLines size={90} className="text-black" />
       </section>
 
-
       <section className="text-center mt-12 px-4">
         <h2 className="text-3xl sm:text-5xl mb-4">
           Are you looking for the <br />
           <span className='mt-2'> Frontend Developer?</span>
         </h2>
-        <p className="text-gray-900  max-w-3xl mt-6 mx-auto mb-6">
+        <p className="text-gray-900 max-w-3xl mt-6 mx-auto mb-6">
           Then you're in the right place. I build modern, scalable, and efficient web applications from front-end to back-end.
           Just reach out and let me help bring your ideas to life!
         </p>
 
-
-
         <div className="flex justify-center gap-4 mb-6">
           <a
-            href=""
+            href="sandhyatimalsena29@gmail.com"
             className="bg-black text-white px-6 py-3 rounded-full font-medium hover:opacity-80"
           >
             Email me
           </a>
 
           <a
-            href=""
+            href="https/facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-teal-500 text-white px-6 py-3 rounded-full font-medium hover:opacity-80"
@@ -86,8 +82,7 @@ const Footer = () => {
           </a>
         </div>
 
-
-        <div className="flex justify-center gap-12 text-lg text-gray-800 ">
+        <div className="flex justify-center gap-12 text-lg text-gray-800">
           <a href="#">LinkedIn</a>
           <a href="#">Facebook</a>
           <a href="#">WhatsApp</a>
@@ -97,7 +92,7 @@ const Footer = () => {
         </div>
       </section>
 
-      {/* Footer bottom */}
+     
       <div className="w-full mt-auto">
         <hr className="border-t border-gray-200" />
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 text-gray-600 text-sm">

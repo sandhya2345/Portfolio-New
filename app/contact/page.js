@@ -53,7 +53,7 @@ const Contact = () => {
 
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Instagram</h3>
-                  <p className="text-green-600 font-medium">Sandhya Timalsena</p>
+                  <p className="text-green-500 font-medium">Sandhya Timalsena</p>
                   <p className="text-sm text-gray-500">Reach Out!</p>
                 </div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
 
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
-                  <p className="text-blue-600 font-medium">sandhyatimalsena29@gmail.com</p>
+                  <p className="text-green-500 font-medium">sandhyatimalsena29@gmail.com</p>
                   <p className="text-sm text-gray-500">Quick Response</p>
                 </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
       </section>
 
       {/* next section starts here */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-8 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white rounded-3xl shadow-lg p-8 sm:p-10">
            
