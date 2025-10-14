@@ -76,12 +76,13 @@ const Contact = () => {
 
               </div>
             </Link>
+            
           </div>
         </div>
       </section>
 
       {/* next section starts here */}
-      <section className="py-8 bg-white">
+      <section className="py-12 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white rounded-3xl shadow-lg p-8 sm:p-10">
            
