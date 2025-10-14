@@ -26,7 +26,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="relative h-[90vh] mt-8 border-t border-gray-100 bg-white overflow-hidden flex flex-col justify-between items-center">
+    <footer className="relative h-full mt-8 border-t border-gray-100 bg-white overflow-hidden flex flex-col justify-between items-center">
       
       <audio ref={audioRef} src="/audio/Audio.mp3" preload="auto" />
 
@@ -82,7 +82,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex justify-center gap-12 text-lg text-gray-800">
+        <div className="flex justify-center gap-12 mb-8 text-lg text-gray-800">
           <a href="#">LinkedIn</a>
           <a href="#">Facebook</a>
           <a href="#">WhatsApp</a>

@@ -12,11 +12,12 @@ import Questions from "@/components/Questions";
 const Home = () => {
 
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       <section className="relative flex flex-col-reverse md:flex-row justify-between items-center h-auto md:h-screen w-full bg-[#070707] text-white overflow-hidden px-6 md:px-16 py-12 md:py-0">
 
 
-        <div className="relative w-full md:w-2/3 space-y-6 md:ml-12 mt-8 md:mt-0 md:mb-8 text-center md:text-left">
+       <div className="relative w-full md:w-2/3 space-y-6 md:ml-12 -mt-20 md:mt-0 mb-8 md:mb-8 text-center md:text-left overflow-visible">
+
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm mx-auto md:mx-0">
             <span><MoonIcon className="w-4 h-4" /></span>
@@ -48,7 +49,7 @@ const Home = () => {
         </div>
 
 
-        <div className="relative w-full md:w-1/2 lg:w-1/3 h-80 sm:h-96 md:h-full flex justify-center mb-24 items-center pointer-events-none">
+        <div className="relative w-full md:w-1/2 lg:w-1/3 h-100  md:h-full flex justify-center mb-0 -mt-24  items-center pointer-events-none">
           <Canvas
             style={{
               width: "100%",
@@ -96,7 +97,7 @@ const Home = () => {
           <div className="text-center max-w-6xl mx-auto mb-12 sm:mb-10 lg:mb-12">
 
 
-            <div className="inline-flex items-center mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:mb-4 shadow-sm">
+            <div className="inline-flex items-center mt-28 md:mt-18 backdrop-blur-sm bg-white border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:mb-4 shadow-sm">
               <Rocket className="mr-2" />
               About Me
               <FlameIcon className="ml-2" />
@@ -106,7 +107,7 @@ const Home = () => {
                 I enjoy working with modern web technologies and bringing ideas to life on screen.
                 </p> */}
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-16 mt-8">
+            <div className="hidden md:flex flex-col sm:flex-row items-center justify-center gap-16 mt-8">
 
               <div className="bg-white rounded-lg shadow-2xl transform rotate-6 border w-72 pb-6 transition hover:rotate-3 hover:-translate-y-2">
                 <img
@@ -179,7 +180,7 @@ const Home = () => {
         </div>
 
 
-        <div className="grid gap-10 md:grid-cols-4 sm:grid-cols-2 max-w-6xl mx-auto py-8">
+        <div className="grid gap-10 md:grid-cols-4 sm:grid-cols-2 max-w-6xl mx-auto py-8 px-12 md:px-0">
 
           <div className="text-center">
             <div className="w-32 h-32 mx-auto flex bg-green-50 rounded-2xl p-6 group-hover:bg-green-100 transition-all duration-300">

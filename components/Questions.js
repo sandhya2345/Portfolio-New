@@ -29,7 +29,7 @@ const Questions = () => {
     };
 
     return (
-        <div className="relative min-h-screen overflow-hidden text-white">
+        <div className="relative h-full py-8 overflow-hidden text-white">
             <style jsx>{`
         @keyframes moveStar {
           0% {

@@ -16,7 +16,7 @@ const Contact = () => {
             Contact Me
           </div>
           <h1 className='text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4'>How Can I Help?</h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-lg text-gray-600 mb-8">
             Let's connect! Whether you have a project, a question, or just want to chat about tech and design, feel free to reach out — I’d love to hear from you.
           </p>
 

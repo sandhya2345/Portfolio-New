@@ -2,7 +2,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, MeshDistortMaterial } from "@react-three/drei";
-import { ArrowRight, CheckCircle, FileText, FileTextIcon, Globe, GraduationCap, Palette, Rocket, RocketIcon, Settings, Star, Stars } from "lucide-react";
+import { ArrowRight, Book, CheckCircle, FileText, FileTextIcon, Globe, GraduationCap, Palette, PartyPopper, Rocket, RocketIcon, Settings, Star, Stars } from "lucide-react";
 import Image from "next/image";
 
 
@@ -55,7 +55,7 @@ const About = () => {
   return (
     <div>
 
-      <section className="flex flex-col items-center min-h-screen bg-white text-center relative overflow-hidden">
+      <section className="flex flex-col items-center h-full mb-20 py-8 md:py-0 bg-white text-center relative overflow-hidden">
         <style jsx>{`
         @keyframes moveStar {
           0% {
@@ -106,7 +106,7 @@ const About = () => {
         </div>
 
 
-        <div className="relative px-6 md:px-12 -mt-24 max-w-7xl text-center z-10">
+        <div className="relative px-6 md:px-12 -mt-24  max-w-7xl text-center z-10">
           <h1 className="text-5xl md:text-5xl font-medium text-gray-900 mb-2">
             Sandhya Timalsena
           </h1>
@@ -151,12 +151,13 @@ const About = () => {
 
         <div className="flex justify-center mb-10">
           <button className="inline-flex items-center backdrop-blur-sm bg-green-50 border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm shadow-sm">
-            <RocketIcon className="mr-2" />
+            <GraduationCap className="mr-2" />
             Educational Background
+            <PartyPopper className="ml-2" />
           </button>
         </div>
 
-     
+
         <div className="flex flex-col md:flex-row items-center justify-center gap-16">
           <div className="relative flex flex-col items-center">
             <div className="absolute -top-4 -left-8 bg-green-50 border border-green-200 rounded-full">
@@ -237,7 +238,7 @@ const About = () => {
                   <CheckCircle className="w-6 h-6 mt-1 mr-2" />
                   Active participant in the Science and Tech Club, organizing annual science fairs.
                 </li>
-                
+
               </ul>
             </div>
           </div>
@@ -270,14 +271,15 @@ const About = () => {
             developing efficient server-side systems, I bring ideas to life with clean, scalable code.
           </p>
 
-          <div className="flex space-x-4">
-            <button className="flex flex-wrap items-center gap-2 px-6 py-3 rounded-full border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition">
+          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+            <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition w-full sm:w-auto">
               Explore Projects <ArrowRight size={18} />
             </button>
-            <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-black text-white hover:bg-gray-800 transition">
+            <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black text-white hover:bg-gray-800 transition w-full sm:w-auto">
               Download Me <FileText size={18} />
             </button>
           </div>
+
         </div>
       </section>
 
