@@ -15,8 +15,7 @@ const Home = () => {
     <div className="bg-white ">
       <section className="relative flex flex-col-reverse md:flex-row justify-between items-center h-auto md:h-screen w-full bg-[#070707] text-white overflow-hidden px-6 md:px-16 py-12 md:py-0">
 
-
-       <div className="relative w-full md:w-2/3 space-y-6 md:ml-12 -mt-20 md:mt-0 mb-8 md:mb-8 text-center md:text-left overflow-visible">
+       <div className="relative w-full md:w-2/3 space-y-6 md:ml-12 -mt-20  md:mt-8 lg:mt-4 mb-8 md:mb-8 text-center md:text-left overflow-visible">
 
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm mx-auto md:mx-0">

@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer className="relative h-full mt-8 border-t border-gray-100 bg-white overflow-hidden flex flex-col justify-between items-center">
-      
+
       <audio ref={audioRef} src="/audio/Audio.mp3" preload="auto" />
 
       {icons.map(({ id, Icon, top, left }) => (
@@ -59,7 +59,7 @@ const Footer = () => {
           Are you looking for the <br />
           <span className='mt-2'> Frontend Developer?</span>
         </h2>
-        <p className="text-gray-900 max-w-3xl mt-6 mx-auto mb-6">
+        <p className="text-gray-900  max-w-2xl md:max-w-3xl mt-6 mx-auto mb-6">
           Then you're in the right place. I build modern, scalable, and efficient web applications from front-end to back-end.
           Just reach out and let me help bring your ideas to life!
         </p>
@@ -82,17 +82,18 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex justify-center gap-12 mb-8 text-lg text-gray-800">
-          <a href="#">LinkedIn</a>
-          <a href="#">Facebook</a>
-          <a href="#">WhatsApp</a>
-          <a href="#">Instagram</a>
-          <a href="#">X</a>
-          <a href="#">Email</a>
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-5 md:gap-8 lg:gap-12 mb-8 text-sm sm:text-base md:text-lg text-gray-800  text-center px-4">
+          <a href="#" className="hover:text-green-500 transition-colors duration-200">LinkedIn</a>
+          <a href="#" className="hover:text-green-500 transition-colors duration-200">Facebook</a>
+          <a href="#" className="hover:text-green-500 transition-colors duration-200">WhatsApp</a>
+          <a href="#" className="hover:text-green-500 transition-colors duration-200">Instagram</a>
+          <a href="#" className="hover:text-green-500 transition-colors duration-200">X</a>
+          <a href="#" className="hover:text-green-500 transition-colors duration-200">Email</a>
         </div>
+
       </section>
 
-     
+
       <div className="w-full mt-auto">
         <hr className="border-t border-gray-200" />
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 text-gray-600 text-sm">
