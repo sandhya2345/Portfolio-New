@@ -159,7 +159,7 @@ const About = () => {
      
         <div className="flex flex-col md:flex-row items-center justify-center gap-16">
           <div className="relative flex flex-col items-center">
-            <div className="absolute -top-4 -left-8 bg-white border border-green-200 rounded-full">
+            <div className="absolute -top-4 -left-8 bg-green-50 border border-green-200 rounded-full">
               <Image
                 src="/college_logo.png"
                 alt="College Logo"
@@ -169,7 +169,7 @@ const About = () => {
               />
             </div>
 
-            <div className="rounded-2xl overflow-hidden shadow-md">
+            <div className="rounded-2xl overflow-hidden ">
               <Image
                 src="/leafs.png"
                 alt="Graduation"
