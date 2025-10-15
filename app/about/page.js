@@ -148,8 +148,7 @@ const About = () => {
       </section>
 
       <section className="flex flex-col items-center justify-center gap-16 py-16 px-20 bg-green-50">
-
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-6 mt-2">
           <button className="inline-flex items-center backdrop-blur-sm bg-green-50 border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm shadow-sm">
             <GraduationCap className="mr-2" />
             Educational Background
@@ -158,23 +157,23 @@ const About = () => {
         </div>
 
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 ">
           <div className="relative flex flex-col items-center">
-            <div className="absolute -top-4 -left-8 bg-green-50 border border-green-200 rounded-full">
+            {/* <div className="absolute  top-1 -right-14 bg-green-50 border border-green-200 rounded-full">
               <Image
                 src="/college_logo.png"
                 alt="College Logo"
-                width={90}
-                height={90}
+                width={70}
+                height={70}
                 className="object-contain"
               />
-            </div>
+            </div> */}
 
-            <div className="rounded-2xl overflow-hidden ">
+            <div className=" overflow-hidden ">
               <Image
                 src="/leafs.png"
                 alt="Graduation"
-                width={400}
+                width={420}
                 height={300}
                 className="object-cover rounded-3xl"
               />
@@ -206,11 +205,11 @@ const About = () => {
 
             <ul className="text-gray-800 space-y-3 text-lg sm:text-lg mb-10">
               <li className="flex items-start gap-2">
-                <CheckCircle className="w-6 h-6 mt-1 mr-2" />
+                <CheckCircle size={30} className="mt-1 mr-2" />
                 Built the frontend for PG Lifestyle, a mattress and sofa company, boosting online sales by up to 20%.
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle className="w-6 h-6 mt-1 mr-2" />
+                <CheckCircle size={26} className=" mt-1 mr-2" />
                 Developed both backend and frontend for Pathyakrama, an educational platform.
               </li>
             </ul>
