@@ -2,6 +2,7 @@
 import { Rocket, FlameIcon, HandshakeIcon } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
+import Image from "next/image";
 
 export default function About() {
 
@@ -35,10 +36,13 @@ export default function About() {
                     <div className="hidden md:flex flex-col sm:flex-row items-center justify-center gap-16 mt-8">
 
                         <div className="bg-white rounded-lg shadow-2xl transform rotate-6 border w-72 pb-6 transition hover:rotate-3 hover:-translate-y-2">
-                            <img
+                            <Image
                                 src="/Resume.png"
-                                alt="resume"
+                                alt="Professional Resume preview"
+                                width={800}
+                                height={400}
                                 className="rounded-t-md object-cover w-full h-64"
+                                priority
                             />
                             <p className="text-center text-sm font-medium mt-2 text-gray-700">
                                 Image 1
@@ -47,10 +51,13 @@ export default function About() {
 
 
                         <div className="bg-white rounded-lg shadow-2xl transform -rotate-3 border w-72 pb-6 transition hover:rotate-0 hover:-translate-y-2">
-                            <img
+                            <Image
                                 src="/MedAhead.png"
-                                alt="medahead"
+                                alt="MedAhead project preview"
+                                width={800}
+                                height={400}
                                 className="rounded-t-md object-cover w-full h-64"
+                                priority
                             />
                             <p className="text-center text-sm font-medium mt-2 text-gray-700">
                                 Image 2
@@ -59,10 +66,13 @@ export default function About() {
 
 
                         <div className="bg-white rounded-lg shadow-2xl transform -rotate-6 border w-72 pb-6 transition hover:rotate-3 hover:-translate-y-2">
-                            <img
+                            <Image
                                 src="/AppleTales.png"
-                                alt="appletales"
+                                alt="AppleTales project preview"
+                                width={800}
+                                height={400}
                                 className="rounded-t-md object-cover w-full h-64"
+                                priority
                             />
                             <p className="text-center text-sm font-medium mt-2 text-gray-700">
                                 Image 3

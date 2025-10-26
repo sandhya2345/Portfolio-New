@@ -2,6 +2,7 @@
 import React from "react";
 import { Rocket, Sparkle, Sun } from "lucide-react";
 import { projects } from "@/lib/data/projects";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -10,7 +11,7 @@ const Projects = () => {
 
         <div className="flex justify-center">
           <div className="inline-flex items-center mt-12 bg-white border border-black  hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium mb-6 sm:mb-12 shadow-sm">
-              <Sun className="mr-2" />
+            <Sun className="mr-2" />
             Project Showcase
             <Sparkle className="ml-2" />
           </div>
@@ -23,10 +24,13 @@ const Projects = () => {
               key={project.id}
               className="rounded-2xl p-3 transition-transform transform hover:scale-105 hover:shadow-xl"
             >
-              <img
+              <Image
                 src={project.image}
-                alt={project.alt}
+                alt={project.alt || "Project image"}
+                width={800}
+                height={400}
                 className="rounded-xl mb-6 w-full h-52 object-cover"
+                priority={project.priority || false}
               />
               <h3 className="text-lg md:text-xl font-medium mb-3">{project.title}</h3>
               <p className="text-gray-600 text-sm md:text-base">{project.description}</p>
@@ -35,7 +39,7 @@ const Projects = () => {
         </div>
 
 
-      <div className="mt-14 text-center">
+        <div className="mt-14 text-center">
           <button className="px-6 py-3 rounded-full bg-white border border-black font-medium hover:bg-black hover:text-white transition flex items-center justify-center mx-auto">
             Explore all Projects
             <Rocket className="ml-2" />

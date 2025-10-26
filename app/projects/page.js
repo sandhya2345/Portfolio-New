@@ -2,15 +2,15 @@
 import { AArrowDown, Flower, Gem, Globe, Hamburger } from "lucide-react";
 import React, { useState } from "react";
 import { projects } from "@/lib/data/projects";
+import Image from "next/image";
 
 const Projects = () => {
-  const [active, setActive] = useState("all"); 
+  const [active, setActive] = useState("all");
 
   const buttonClasses = (category) =>
-    `flex items-center gap-2 px-6 py-3 rounded-full font-medium transition ${
-      active === category
-        ? "bg-gray-900 text-white shadow-md hover:shadow-lg"
-        : "border border-gray-900 bg-white text-gray-700 hover:shadow-md"
+    `flex items-center gap-2 px-6 py-3 rounded-full font-medium transition ${active === category
+      ? "bg-gray-900 text-white shadow-md hover:shadow-lg"
+      : "border border-gray-900 bg-white text-gray-700 hover:shadow-md"
     }`;
 
 
@@ -27,7 +27,7 @@ const Projects = () => {
           <Gem className="ml-2 h-8 w-8" />
         </h2>
 
-      
+
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => setActive("all")} className={buttonClasses("all")}>
             <Hamburger /> All Projects
@@ -43,17 +43,20 @@ const Projects = () => {
           </button>
         </div>
 
-    
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center mt-12">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
               className="rounded-2xl p-3 transition-transform transform hover:scale-105 hover:shadow-xl"
             >
-              <img
+              <Image
                 src={project.image}
-                alt={project.alt}
+                alt={project.alt || "Project preview"}
+                width={800}
+                height={400}
                 className="rounded-xl mb-6 w-full h-52 object-cover"
+                priority={project.priority || false}
               />
               <h3 className="text-lg md:text-xl font-medium mb-3">{project.title}</h3>
               <p className="text-gray-800 text-sm md:text-base">{project.description}</p>

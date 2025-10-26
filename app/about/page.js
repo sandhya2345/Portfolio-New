@@ -147,7 +147,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-center gap-16 py-16 px-20 bg-green-50">
+      <section className="flex flex-col items-center justify-center gap-16 py-20 px-20 bg-green-50">
         <div className="flex justify-center mb-6 mt-2">
           <button className="inline-flex items-center backdrop-blur-sm bg-green-50 border border-black font-medium hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm shadow-sm">
             <GraduationCap className="mr-2" />
@@ -157,24 +157,24 @@ const About = () => {
         </div>
 
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12 ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 -mt-8 ">
           <div className="relative flex flex-col items-center">
-            {/* <div className="absolute  top-1 -right-14 bg-green-50 border border-green-200 rounded-full">
+            <div className="absolute  top-3 -right-5 bg-green-50 border border-green-200 rounded-full">
               <Image
                 src="/college_logo.png"
                 alt="College Logo"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
                 className="object-contain"
               />
-            </div> */}
+            </div>
 
-            <div className=" overflow-hidden ">
+            <div className="overflow-hidden mt-2">
               <Image
                 src="/leafs.png"
                 alt="Graduation"
-                width={420}
-                height={300}
+                width={430}
+                height={320}
                 className="object-cover rounded-3xl"
               />
             </div>
