@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Moon from "./moon/page";
+import Moon from "@/components/Moon";
 import { Atom, Book, BookA, Bot, Brain, Camera, ChevronDown, Facebook, Figma, Flame, FlameIcon, Flower, GithubIcon, Handshake, HandshakeIcon, Heart, Instagram, KeyRound, Leaf, LucideLinkedin, MoonIcon, MoveDownRight, MoveUpIcon, MoveUpRight, Music, Rocket, RocketIcon, Settings, ShellIcon, Shield, ShieldPlus, Sparkle, SparkleIcon, Star, Type } from "lucide-react";
 import Stars from "@/components/Stars";
 import Projects from "@/components/Projects";
