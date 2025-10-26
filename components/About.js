@@ -82,7 +82,7 @@ export default function About() {
 
                     <div className="mt-16 text-center max-w-6xl mx-auto">
                         <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">
-                            Hello, I'm <span className="text-black font-semibold">Sandhya Timalsena</span>
+                            Hello, I&apos;m <span className="text-black font-semibold">Sandhya Timalsena</span>
                         </h2>
                         <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6 px-4">
                             I&apos;m a passionate <span className="font-semibold text-black">Web Developer</span> who loves designing and building
