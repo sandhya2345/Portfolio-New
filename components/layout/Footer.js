@@ -60,7 +60,7 @@ const Footer = () => {
           <span className='mt-2'> Frontend Developer?</span>
         </h2>
         <p className="text-gray-900  max-w-2xl md:max-w-3xl mt-6 mx-auto mb-6">
-          Then you're in the right place. I build modern, scalable, and efficient web applications from front-end to back-end.
+          Then you&apos;re in the right place. I build modern, scalable, and efficient web applications from front-end to back-end.
           Just reach out and let me help bring your ideas to life!
         </p>
 

@@ -16,7 +16,7 @@ const Home = () => {
     <div className="bg-white ">
       <section className="relative flex flex-col-reverse md:flex-row justify-between items-center h-auto md:h-[96vh] w-full bg-[#070707] text-white overflow-hidden px-6 md:px-16 py-12 md:py-0">
 
-        {/* LEFT SECTION (Text + Buttons) */}
+       
         <motion.div
           className="relative w-full md:w-2/3 space-y-6 md:ml-12 -mt-20  md:mt-8 lg:mt-2 mb-8 md:mb-8 text-center md:text-left overflow-visible"
           initial={{ opacity: 0, y: 40 }}
@@ -61,7 +61,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 1.1, ease: "easeOut" }}
           >
             <button className="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
-              I'm Resume
+              I&apos;m Resume
             </button>
 
             <div className="flex justify-center md:justify-start items-center gap-6 text-gray-300 hover:text-white transition-all">

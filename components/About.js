@@ -85,7 +85,7 @@ export default function About() {
                             Hello, I'm <span className="text-black font-semibold">Sandhya Timalsena</span>
                         </h2>
                         <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6 px-4">
-                            I'm a passionate <span className="font-semibold text-black">Web Developer</span> who loves designing and building
+                            I&apos;m a passionate <span className="font-semibold text-black">Web Developer</span> who loves designing and building
                             visually appealing, responsive, and user-focused websites. My goal is to craft digital experiences that
                             feel effortless yet impactful — combining creativity and clean code to tell a meaningful story through design.
                         </p>
@@ -98,7 +98,7 @@ export default function About() {
                                 className="inline-flex items-center bg-black text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-gray-800 transition"
 
                             >
-                                Let's Connect
+                                Let&apos;s Connect
                                 <HandshakeIcon className="ml-2" />
                             </a>
                         </div>

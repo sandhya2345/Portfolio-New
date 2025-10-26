@@ -249,10 +249,13 @@ const About = () => {
       <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-20 bg-white">
 
         <div className="md:w-1/2 w-full flex justify-center items-center bg-gray-50  rounded-2xl shadow-lg">
-          <img
+          <Image
             src="/Resume.png"
-            alt="Resume Preview"
+            alt="Resume Preview showcasing professional design layout"
+            width={800}
+            height={600}
             className="rounded-xl shadow-md w-full h-auto object-cover"
+            priority
           />
         </div>
 
