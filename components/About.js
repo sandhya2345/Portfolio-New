@@ -82,13 +82,24 @@ export default function About() {
 
                     <div className="mt-16 text-center max-w-6xl mx-auto">
                         <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">
-                            Hello, I&apos;m <span className="text-black font-semibold">Sandhya Timalsena</span>
+                            Hi, I&apos;m <span className="text-black font-semibold">Sandhya Timalsena</span>
                         </h2>
-                        <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6 px-4">
-                            I&apos;m a passionate <span className="font-semibold text-black">Web Developer</span> who loves designing and building
-                            visually appealing, responsive, and user-focused websites. My goal is to craft digital experiences that
-                            feel effortless yet impactful — combining creativity and clean code to tell a meaningful story through design.
+                        <p className="text-gray-700 text-center text-base sm:text-lg leading-relaxed mb-6 px-4">
+                            I&apos;m a very passionate <span className="font-semibold text-black">Web Developer</span> who finds joy in designing, coding, and bringing creative ideas to life through technology.
+                            My journey into the world of computers began back in school, when we were first introduced to Python. At first, it felt confusing - I mean, who really understood what int or float  meant back then?
+                            But when I became the only one in my team handling our project, something clicked. That moment gave me the confidence that maybe this was something I could truly achieve.
                         </p>
+
+                        <p className="text-gray-700 text-base text-center sm:text-lg leading-relaxed mb-6 px-4">
+                            After school, I actually had different goals that had nothing to do with coding or IT.
+                            But as fate would have it, I ended up pursuing a Bachelor&apos;s degree in the field of technology and that&apos;s when everything changed.
+                            I started to genuinely enjoy programming, especially web development. Watching my designs come to life on screen became one of my favorite feelings.
+                            Today, I love creating clean, responsive, and user-friendly websites that tell a story.
+                            For me, coding isn&apos;t just about logic, it&apos;s about creativity, growth, and expressing ideas that connect people and experiences through design.
+
+                        </p>
+
+
 
 
 
