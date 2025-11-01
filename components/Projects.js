@@ -19,12 +19,12 @@ const Projects = () => {
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-          {projects.map((project) => (
+          {projects.slice(0, 3).map((project) => (
             <div
               key={project.id}
               className="rounded-2xl p-4 transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-50"
             >
-            
+
               <Link href={`/projects/${project.id}`}>
                 <Image
                   src={project.image}
@@ -57,7 +57,7 @@ const Projects = () => {
                 </div>
               )}
 
-         
+
               <div className="flex justify-center gap-6 mt-3">
                 {project.github && (
                   <a
@@ -86,12 +86,16 @@ const Projects = () => {
           ))}
         </div>
 
-     
+
         <div className="mt-14 text-center">
-          <button className="px-6 py-3 rounded-full bg-gray-900 text-white border border-black font-medium hover:bg-black hover:text-white transition flex items-center justify-center mx-auto">
+          <a
+            href="projects"
+            className="inline-flex items-center bg-black text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-gray-800 transition"
+
+          >
             Explore all Projects
             <Rocket className="ml-2" />
-          </button>
+          </a>
         </div>
       </div>
     </section>
