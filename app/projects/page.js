@@ -3,6 +3,7 @@ import { AArrowDown, Flower, Gem, Globe, Hamburger } from "lucide-react";
 import React, { useState } from "react";
 import { projects } from "@/lib/data/projects";
 import Image from "next/image";
+import Link from "next/link";
 
 const Projects = () => {
   const [active, setActive] = useState("all");
@@ -46,10 +47,12 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center mt-12">
           {filteredProjects.map((project) => (
+             <Link key={project.id} href={`/projects/${project.id}`}>
+
             <div
               key={project.id}
               className="rounded-2xl p-3 transition-transform transform hover:scale-105 hover:shadow-xl"
-            >
+              >
               <Image
                 src={project.image}
                 alt={project.alt || "Project preview"}
@@ -57,10 +60,11 @@ const Projects = () => {
                 height={400}
                 className="rounded-xl mb-6 w-full h-52 object-cover"
                 priority={project.priority || false}
-              />
+                />
               <h3 className="text-lg md:text-xl font-medium mb-3">{project.title}</h3>
               <p className="text-gray-800 text-sm md:text-base">{project.description}</p>
             </div>
+                </Link>
           ))}
         </div>
       </div>

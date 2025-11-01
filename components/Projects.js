@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
-import { Rocket, Sparkle, Sun } from "lucide-react";
+import { Rocket, Sparkle, Sun, Github, ExternalLink } from "lucide-react";
 import { projects } from "@/lib/data/projects";
 import Image from "next/image";
+import Link from "next/link";
 
 const Projects = () => {
   return (
     <section className="py-4 bg-white">
-      <div className="max-w-7xl mx-auto px-8  md:px-12">
-
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
         <div className="flex justify-center">
-          <div className="inline-flex items-center mt-12 bg-white border border-black  hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium mb-6 sm:mb-12 shadow-sm">
+          <div className="inline-flex items-center mt-12 bg-white border border-black hover:bg-black hover:text-white transition px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-medium mb-6 sm:mb-12 shadow-sm">
             <Sun className="mr-2" />
             Project Showcase
             <Sparkle className="ml-2" />
@@ -18,29 +18,77 @@ const Projects = () => {
         </div>
 
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="rounded-2xl p-3 transition-transform transform hover:scale-105 hover:shadow-xl"
+              className="rounded-2xl p-4 transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-50"
             >
-              <Image
-                src={project.image}
-                alt={project.alt || "Project image"}
-                width={800}
-                height={400}
-                className="rounded-xl mb-6 w-full h-52 object-cover"
-                priority={project.priority || false}
-              />
-              <h3 className="text-lg md:text-xl font-medium mb-3">{project.title}</h3>
-              <p className="text-gray-600 text-sm md:text-base">{project.description}</p>
+            
+              <Link href={`/projects/${project.id}`}>
+                <Image
+                  src={project.image}
+                  alt={project.alt || "Project image"}
+                  width={800}
+                  height={400}
+                  className="rounded-xl mb-6 w-full h-52 object-cover"
+                  priority={project.priority || false}
+                />
+
+                <h3 className="text-lg md:text-xl font-medium mb-3">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-600 text-sm md:text-base mb-4 line-clamp-3">
+                  {project.description}
+                </p>
+              </Link>
+
+              {project.technologies && project.technologies.length > 0 && (
+                <div className="flex flex-wrap justify-center gap-2 mb-4">
+                  {project.technologies.map((tech, index) => (
+                    <div
+                      key={index}
+                      className="px-3 py-1 text-xs border border-green-100 rounded-lg bg-green-50 text-gray-700"
+                    >
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+         
+              <div className="flex justify-center gap-6 mt-3">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 px-3 py-2 text-sm border border-black rounded-full hover:bg-black hover:text-white transition"
+                  >
+                    <Github size={16} />
+                    GitHub
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 px-3 py-2 text-sm border border-black rounded-full hover:bg-black hover:text-white transition"
+                  >
+                    <ExternalLink size={16} />
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
 
-
+     
         <div className="mt-14 text-center">
-          <button className="px-6 py-3 rounded-full bg-white border border-black font-medium hover:bg-black hover:text-white transition flex items-center justify-center mx-auto">
+          <button className="px-6 py-3 rounded-full bg-gray-900 text-white border border-black font-medium hover:bg-black hover:text-white transition flex items-center justify-center mx-auto">
             Explore all Projects
             <Rocket className="ml-2" />
           </button>
