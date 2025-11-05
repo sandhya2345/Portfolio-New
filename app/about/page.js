@@ -161,7 +161,7 @@ const About = () => {
           <div className="relative flex flex-col items-center">
             <div className="absolute  top-3 -right-5 bg-green-50 border border-green-200 rounded-full">
               <Image
-                src="/college_logo.png"
+                src="/images/college_logo.png"
                 alt="College Logo"
                 width={60}
                 height={60}
@@ -171,7 +171,7 @@ const About = () => {
 
             <div className="overflow-hidden mt-2">
               <Image
-                src="/leafs.png"
+                src="/images/leafs.png"
                 alt="Graduation"
                 width={430}
                 height={320}

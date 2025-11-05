@@ -7,7 +7,7 @@ import { Atom, Book, BookA, Bot, Brain, Camera, ChevronDown, Facebook, Figma, Fl
 import Stars from "@/components/Stars";
 import Projects from "@/components/Projects";
 import Questions from "@/components/Questions";
-import { motion ,  useAnimation} from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import About from "@/components/About";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
     <div className="bg-white ">
       <section className="relative flex flex-col-reverse md:flex-row justify-between items-center h-auto md:h-[96vh] w-full bg-[#070707] text-white overflow-hidden px-6 md:px-16 py-12 md:py-0">
 
-       
+
         <motion.div
           className="relative w-full md:w-2/3 space-y-6 md:ml-12 -mt-20  md:mt-8 lg:mt-2 mb-8 md:mb-8 text-center md:text-left overflow-visible"
           initial={{ opacity: 0, y: 40 }}
@@ -96,9 +96,9 @@ const Home = () => {
       </section>
 
       {/* next section starts here */}
-    
 
-      <About/>
+
+      <About />
 
 
       <section>
@@ -159,7 +159,27 @@ const Home = () => {
 
       <Projects />
 
+
+
+
       <Questions />
+
+      {/* <section className="relative bg-[#070707] h-screen">
+        <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg
+            className="relative block w-full h-[80px]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#ffffff"
+              d="M0,96L48,85.3C96,75,192,53,288,85.3C384,117,480,203,576,213.3C672,224,768,160,864,144C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+            ></path>
+          </svg>
+        </div>
+      </section> */}
+
 
 
 

@@ -26,7 +26,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="relative h-full mt-8 border-t border-gray-100 bg-white overflow-hidden flex flex-col justify-between items-center">
+    <footer className="relative h-full mt-0 border-t border-gray-100 bg-white overflow-hidden flex flex-col justify-between items-center">
 
       <audio ref={audioRef} src="/audio/Audio.mp3" preload="auto" />
 

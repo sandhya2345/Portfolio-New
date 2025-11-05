@@ -37,13 +37,14 @@ export default function About() {
 
                         <div className="bg-white rounded-lg shadow-2xl transform rotate-6 border w-72 pb-6 transition hover:rotate-3 hover:-translate-y-2">
                             <Image
-                                src="/pic2.jpeg"
+                                src="/images/pic2.jpeg"
                                 alt="Professional Resume preview"
                                 width={1600}
                                 height={900}
                                 quality={100}
-                                className="rounded-t-md object-cover w-full h-64"
-                                priority
+                                className="rounded-t-md object-cover w-full h-64 select-none"
+                                draggable="false"
+                                onContextMenu={(e) => e.preventDefault()}
                             />
                             <p className="text-center text-sm font-medium mt-2 text-gray-700">
                                 Image 1
@@ -55,14 +56,14 @@ export default function About() {
                         <div className="bg-white rounded-lg shadow-2xl transform -rotate-3 border w-72 pb-6 transition hover:rotate-0 hover:-translate-y-2">
                             <div className="relative w-full h-64 flex items-center justify-center overflow-hidden bg-white">
                                 <Image
-                                    src="/pic3.jpeg"
-                                    alt="MedAhead project preview"
+                                    src="/images/pic3.jpeg"
+                                    alt="Professional Resume preview"
                                     width={1600}
                                     height={900}
                                     quality={100}
-                                    unoptimized
-                                    className="rounded-t-md object-contain w-auto h-full scale-150"
-                                    priority
+                                    className="rounded-t-md object-cover w-full h-64 select-none"
+                                    draggable="false"
+                                    onContextMenu={(e) => e.preventDefault()}
                                 />
                             </div>
                             <p className="text-center text-sm font-medium mt-2 text-gray-700">
@@ -75,14 +76,14 @@ export default function About() {
 
                         <div className="bg-white rounded-lg shadow-2xl transform -rotate-6 border w-72 pb-6 transition hover:rotate-3 hover:-translate-y-2">
                             <Image
-                                src="/pic1.jpeg"
-                                alt="AppleTales project preview"
+                                src="/images/pic1.jpeg"
+                                alt="Professional Resume preview"
                                 width={1600}
                                 height={900}
                                 quality={100}
-                                unoptimized
-                                className="rounded-t-md object-cover w-full h-64"
-                                priority
+                                className="rounded-t-md object-cover w-full h-64 select-none"
+                                draggable="false"
+                                onContextMenu={(e) => e.preventDefault()}
                             />
                             <p className="text-center text-sm font-medium mt-2 text-gray-700">
                                 Image 3
