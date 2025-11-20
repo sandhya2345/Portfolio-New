@@ -2,7 +2,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, MeshDistortMaterial } from "@react-three/drei";
-import { ArrowRight, Book, CheckCircle, FileText, FileTextIcon, Globe, GraduationCap, Palette, PartyPopper, Rocket, RocketIcon, Settings, Star, Stars } from "lucide-react";
+import { ArrowRight, Book, CheckCircle, FileText, FileTextIcon, Flame, Globe, GraduationCap, Palette, PartyPopper, Rocket, RocketIcon, Settings, Star, Stars } from "lucide-react";
 import Image from "next/image";
 
 
@@ -56,6 +56,7 @@ const About = () => {
     <div>
 
       <section className="flex flex-col items-center h-full mb-20 py-8 md:py-0 bg-white text-center relative overflow-hidden">
+
         <style jsx>{`
         @keyframes moveStar {
           0% {

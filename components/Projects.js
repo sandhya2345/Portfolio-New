@@ -22,30 +22,33 @@ const Projects = () => {
           {projects.slice(0, 3).map((project) => (
             <div
               key={project.id}
-              className="rounded-2xl p-4 transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-50"
+              className="rounded-2xl pb-4 transition-transform transform hover:scale-105  bg-white border-t border-gray-50"
             >
 
               <Link href={`/projects/${project.id}`}>
-                <Image
-                  src={project.image}
-                  alt={project.alt || "Project image"}
-                  width={800}
-                  height={400}
-                  className="rounded-xl mb-6 w-full h-52 object-cover"
-                  priority={project.priority || false}
-                />
+                <div className="rounded-xl p-3 mb-6 w-full h-52 bg-green-50 border border-green-200 overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.alt || "Project image"}
+                    width={800}
+                    height={400}
+                    className="w-full h-full object-cover"
+                    priority={project.priority || false}
+                  />
+                </div>
 
-                <h3 className="text-lg md:text-xl font-medium mb-3">
+
+                <h3 className="text-lg md:text-xl px-3 font-medium mb-3">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm md:text-base mb-4 line-clamp-3">
+                <p className="text-gray-600 px-2 text-sm md:text-base mb-4 line-clamp-3">
                   {project.description}
                 </p>
               </Link>
 
               {project.technologies && project.technologies.length > 0 && (
-                <div className="flex flex-wrap justify-center gap-2 mb-4">
+                <div className="flex flex-wrap justify-center px-3 gap-2 mb-4">
                   {project.technologies.map((tech, index) => (
                     <div
                       key={index}
