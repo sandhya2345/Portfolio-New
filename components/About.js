@@ -112,9 +112,6 @@ export default function About() {
                         </p>
 
 
-
-
-
                         <div className="mt-12">
                             <a
                                 href="contact"
